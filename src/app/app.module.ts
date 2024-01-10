@@ -12,6 +12,7 @@ import { Tp3DebutComponent } from './tp3/tp3-debut/tp3-debut.component';
 import { Tp3ButtonComponent } from './tp3/tp3-button/tp3-button.component';
 import { Tp4DebutComponent } from './tp4/tp4-debut/tp4-debut.component';
 import { Tp4CardComponent } from './tp4/tp4-card/tp4-card.component';
+import { Tp5DebutComponent } from './tp5/tp5-debut/tp5-debut.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { Tp4CardComponent } from './tp4/tp4-card/tp4-card.component';
     Tp3DebutComponent,
     Tp3ButtonComponent,
     Tp4DebutComponent,
-    Tp4CardComponent
+    Tp4CardComponent,
+    Tp5DebutComponent
   ],
   imports: [
     BrowserModule,

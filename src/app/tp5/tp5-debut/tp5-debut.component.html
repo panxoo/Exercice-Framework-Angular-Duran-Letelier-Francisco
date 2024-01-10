@@ -1,0 +1,56 @@
+<div class="m-3">
+  <a class="btn btn-primary" href="#" role="button">Accueil</a>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card">
+        <h5 class="card-header">Exercice 5</h5>
+        <div class="card-body">
+          <div class="m-5">
+            <div class="card">
+              <h5 class="card-header">Details</h5>
+              <div class="card-body">
+                <dl class="row">
+                  <dt class="col-sm-3">ID</dt>
+                  <dd class="col-sm-9">{{ detail.id }}</dd>
+                  <dt class="col-sm-3">Marque</dt>
+                  <dd class="col-sm-9">{{ detail.marque }}</dd>
+                  <dt class="col-sm-3">Modele</dt>
+                  <dd class="col-sm-9">{{ detail.modele }}</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">id</th>
+                <th scope="col">Marque</th>
+                <th scope="col">Modele</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let voiture of voitureList">
+                <td>{{ voiture.id }}</td>
+                <td>{{ voiture.marque }}</td>
+                <td>{{ voiture.modele }}</td>
+                <td>
+                  <button
+                    class="btn btn-primary"
+                    (click)="regarderDetail(voiture.id)"
+                  >
+                    Detail
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
