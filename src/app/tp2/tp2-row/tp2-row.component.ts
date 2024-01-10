@@ -1,7 +1,7 @@
 import { Component, Input, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-tp2-row',
+  selector: '[app-tp2-row]',
   templateUrl: './tp2-row.component.html',
   styleUrls: ['./tp2-row.component.scss']
 })
