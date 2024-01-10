@@ -3,16 +3,11 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="coll-l">
+    <div class="col-10">
       <div class="card">
         <h5 class="card-header">Exercice 4</h5>
         <div class="card-body">
-          <app-tp4-card
-            *ngFor="let animal of this.animaux"
-            [photo]="animal.photo"
-            [nom]="animal.nom"
-            [cri]="animal.cri"
-          ></app-tp4-card>
+          <app-tp4-card *ngFor="let animal of this.animaux" [photo]="animal.photo" [nom]="animal.nom" [cri]="animal.cri"></app-tp4-card>
         </div>
       </div>
     </div>

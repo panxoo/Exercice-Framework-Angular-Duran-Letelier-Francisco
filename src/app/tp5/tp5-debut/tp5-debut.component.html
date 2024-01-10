@@ -4,7 +4,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-sm">
+    <div class="col-10">
       <div class="card">
         <h5 class="card-header">Exercice 5</h5>
         <div class="card-body">
@@ -39,12 +39,7 @@
                 <td>{{ voiture.marque }}</td>
                 <td>{{ voiture.modele }}</td>
                 <td>
-                  <button
-                    class="btn btn-primary"
-                    (click)="regarderDetail(voiture.id)"
-                  >
-                    Detail
-                  </button>
+                  <button class="btn btn-primary" (click)="regarderDetail(voiture.id)">Detail</button>
                 </td>
               </tr>
             </tbody>
